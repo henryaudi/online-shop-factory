@@ -5,9 +5,11 @@ import factory.PhoneFactory;
 
 public class Main {
     public static void main(String[] args) {
+        // Create online stores.
         OnlineStoreFactory appleStore = new AppleOnlineStore();
         OnlineStoreFactory samsungStore = new SamsungOnlineStore();
 
+        // Log in, input address, make payment, and finish the order.
         System.out.println("------------------------------------------");
         appleStore.login("JohnDoe123");
         appleStore.inputAddress("123 Ave, Dallas, TX, USA");

@@ -4,6 +4,11 @@ import factory.OnlineStoreFactory;
 import factory.PhoneFactory;
 
 public class SamsungOnlineStore extends OnlineStoreFactory {
+    /**
+     * Create phone instance associated to the name of the phone given.
+     * @param phone: the name of the phone to be created
+     * @return: PhoneFactory associated to the given phone model
+     */
     @Override
     protected PhoneFactory createPhoneFactory(String phone) {
         return switch (phone) {
@@ -13,6 +18,9 @@ public class SamsungOnlineStore extends OnlineStoreFactory {
         };
     }
 
+    /**
+     * Finish the order in Samsung USA Online Store!
+     */
     @Override
     public void finish() {
         System.out.println("[CONFIRMED] "

@@ -10,6 +10,7 @@ public class GalaxyAI extends PhoneFactory {
         this.setModel("Galaxy AI");
     }
 
+    // Methods
     @Override
     public String toString() {
         return "GalaxyAI";

@@ -25,6 +25,10 @@ public abstract class PhoneFactory {
     }
 
     // Methods
+
+    /**
+     * Prepare for the order...
+     */
     protected void prepare() {
         System.out.println("[WAITING] Preparing " + this.getModel() + " manufactured by " + this.getCompany() + "...");
     }

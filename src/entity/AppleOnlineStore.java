@@ -5,6 +5,13 @@ import factory.PhoneFactory;
 
 public class AppleOnlineStore extends OnlineStoreFactory {
 
+    // Methods
+
+    /**
+     * Create a phone corresponding to the given name.
+     * @param phone: the name of the phone to be created
+     * @return: PhoneFactory associated to the given phone model
+     */
     @Override
     protected PhoneFactory createPhoneFactory(String phone) {
         return switch (phone) {
@@ -15,6 +22,9 @@ public class AppleOnlineStore extends OnlineStoreFactory {
         };
     }
 
+    /**
+     * Finish the process in Apple Online Store
+     */
     @Override
     public void finish() {
         System.out.println("[CONFIRMED] "
